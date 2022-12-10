@@ -19,6 +19,10 @@
             name = "rustlings";
             version = "5.3.0";
 
+            buildInputs = with pkgs; lib.optionals stdenv.isDarwin [
+              darwin.apple_sdk.frameworks.CoreServices
+            ];
+
             src = with pkgs.lib; cleanSourceWith {
               src = self;
               # a function that returns a bool determining if the path should be included in the cleaned source
