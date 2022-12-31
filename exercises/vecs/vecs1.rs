@@ -4,13 +4,23 @@
 // Make me compile and pass the test!
 // Execute `rustlings hint vecs1` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
+// I AM DONE
 
 fn array_and_vec() -> ([i32; 4], Vec<i32>) {
     let a = [10, 20, 30, 40]; // a plain array
-    let v = // TODO: declare your vector here with the macro for vectors
 
-    (a, v)
+    //let v = vec![10, 20, 30, 40];
+
+    // let v = a.to_vec();
+    
+    // let v = a.iter().cloned().collect();
+
+    /* let v = Vec::new();// TODO: declare your vector here with the macro for vectors
+    for el in a.iter() {
+        v.push(*el);
+    } */
+    
+    (a, a.to_vec())
 }
 
 #[cfg(test)]
