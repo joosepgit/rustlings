@@ -48,7 +48,7 @@ mod tests {
 
     #[test]
     fn it_works() {
-        let output = transformer(vec![
+        let output = transformer(vec![a
             ("hello".into(), Command::Uppercase),
             (" all roads lead to rome! ".into(), Command::Trim),
             ("foo".into(), Command::Append(1)),
